@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Portfolio — Dan Mcley Pangan</title>
+<link rel="icon" type="image/jpg" href="my pic.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="blob"></div>
+
+<!-- ══ NAV ════════════════════════════════════ -->
+<nav>
+  <a class="logo" href="#"><em>&lt;</em>Dan Mcley Pangan<em>/&gt;</em></a>
+  <div class="nav-center">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ═══════════════════════════════════ -->
+<div style="position:relative;z-index:1;">
+<div id="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow reveal">Open to work · Based in Cebu</p>
+    <h1 class="hero-h1 reveal d1">
+      <span class="name-line">Dan Mcley Pangan</span>
+      <span class="role-line">Developer</span>
+    </h1>
+    <p class="hero-desc reveal d2">
+      I craft fast, purposeful <strong>web experiences</strong> and <strong>mobile apps</strong> while managing the <strong>computer systems</strong> and infrastructure that power them. From front-end polish to back-end architecture and server management.
+    </p>
+    <div class="hero-actions reveal d3">
+      <a class="btn btn-fill" href="#projects">View My Work</a>
+      <a class="btn btn-outline" href="#contact">Let's Talk</a>
+    </div>
+  </div>
+
+  <!-- Terminal -->
+  <div class="hero-terminal reveal d2">
+    <div class="terminal-bar">
+      <span class="terminal-dot td-r"></span>
+      <span class="terminal-dot td-y"></span>
+      <span class="terminal-dot td-g"></span>
+      <span class="terminal-title">~/portfolio — zsh</span>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+    </div>
+  </div>
+</div>
+</div>
+
+<!-------OFFICIAL PROJECTS-------->
+<section id="projects">
+<div class="wrapper">
+  <p class="sec-eyebrow reveal">Selected Work</p>
+  <h2 class="sec-title reveal d1">Official Projects<span style="color:var(--cyan)">.</span></h2>
+  <p class="sec-sub reveal d2">Official Project I took part in.</p>
+
+  <div class="sec-rule"></div>
+
+  <div class="tab-bar reveal">
+    <button class="tab-btn active" data-tab="web">
+      <span class="dot"></span> Web Dev
+    </button>
+    <button class="tab-btn" data-tab="mobile">
+      <span class="dot"></span> Mobile Apps
+    </button>
+  </div>
+
+  <!-- ── WEB PANEL ── -->
+  <div class="tab-panel active" id="tab-web">
+    <div class="web-projects">
+
+      <div class="web-card reveal" data-project="boheco_web">
+        <div class="web-card-img">
+          <img src="BOHECO group pic.jpg" alt="BOHECO 1 Board of Directors election system">
+        </div>
+        <div class="web-card-body">
+          <span class="card-num">01</span>
+          <div class="card-tech-stack">
+            <span class="tech">Laravel</span>
+            <span class="tech">Tailwind</span>
+            <span class="tech">PHP</span>
+            <span class="tech">MSSQL</span>
+            <span class="tech">API</span>
+          </div>
+          <h3 class="card-title">BOHECO 1 Board of Directors election system</h3>
+          <p class="card-desc">During our OJT in BOHECO 1, we are tasked to create a web and mobile system that is fast and interactive. We also created a secure API for the mobile system to use.</p>
+          <div class="card-actions">
+          </div>
+        </div>
+      </div>
+
+      <div class="web-card reveal d1" data-project="prisaa">
+        <div class="web-card-img">
+          <img src="PRISAA group pic.jpg" alt="PRISAA BOHOL Sports Website">
+        </div>
+        <div class="web-card-body">
+          <span class="card-num">02</span>
+          <div class="card-tech-stack">
+            <span class="tech">Laravel</span>
+            <span class="tech">Vue.js</span>
+            <span class="tech">Firebase</span>
+            <span class="tech">Bootstrap</span>
+          </div>
+          <h3 class="card-title">PRISAA BOHOL Sports Website</h3>
+          <p class="card-desc">For our Capstone Project, we asked the PRISAA Bohol President, if we could create a website for them. Thankfully we created it successfully and they were very happy with the result</p>
+          <div class="card-actions">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /tab-web -->
+
+  <!-- ── MOBILE PANEL ── -->
+  <div class="tab-panel" id="tab-mobile">
+    <div class="mobile-projects">
+
+      <div class="mobile-card reveal" data-project="boheco_mobile">
+        <div class="mobile-card-screen">
+          <img src="BOHECO mobile pic.jpg" alt="BOHECO 1 Board of Directors election system mobile">
+          <span class="platform-badge pb-ios">Android</span>
+        </div>
+        <div class="mobile-card-body">
+          <div class="card-tech-stack">
+            <span class="tech" style="background:var(--green-dim);color:var(--green);border-color:rgba(57,255,143,0.15);">Kotlin</span>
+            <span class="tech" style="background:var(--green-dim);color:var(--green);border-color:rgba(57,255,143,0.15);">Jetpack Compose</span>
+          </div>
+          <h3 class="card-title">BOHECO 1 Board of Directors election system mobile</h3>
+          <p class="card-desc">This mobile app is where the voters will vote it will then send that vote to the database in which the can be seen in the web version.</p>
+          <div class="card-actions">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /tab-mobile -->
+
+</div>
+</section>
+
+<!-- ══ ABOUT ════════════════════════════════════ -->
+<section id="about">
+<div class="wrapper">
+  <div class="about-grid">
+    <div class="about-photo-col reveal-left">
+      <div class="photo-wrap">
+        <div class="photo-inner">
+          <img src="my pic.jpg" alt="Dan Mcley Pangan">
+        </div>
+        <div class="avail-pill">
+          <span class="avail-dot"></span>
+          Available for work
+        </div>
+      </div>
+    </div>
+    <div class="about-text-col">
+      <p class="sec-eyebrow reveal">About Me</p>
+      <h2 class="sec-title reveal d1">Who I Am<span style="color:var(--cyan)">.</span></h2>
+      <p class="reveal d1">
+        Hey — I'm <strong>Dan Mcley Pangan</strong>, an IT professional based in <strong>Cebu</strong>.
+        I specialize in building <strong>web applications and mobile apps</strong> while managing the 
+        <strong>computer systems and infrastructure</strong> that power them.
+      </p>
+      <p class="reveal d2">
+        I care about <strong>clean code</strong>, hardware optimization, and shipping secure things that actually work.
+        Aspiring to be a <strong>Full-Stack Developer & IT Engineer</strong>.
+        Open to freelance, collaborations, and full-time opportunities.
+      </p>
+
+      <div class="skills-section reveal d3">
+        <p class="skills-label">Web Stack</p>
+        <div class="skills-web">
+          <span class="skill skill-w">JavaScript</span>
+          <span class="skill skill-w">Laravel</span>
+          <span class="skill skill-w">React</span>
+          <span class="skill skill-w">Vue. js</span>
+          <span class="skill skill-w">Node.js</span>
+          <span class="skill skill-w">MySQL</span>
+        </div>
+        <p class="skills-label">Mobile Stack</p>
+        <div class="skills-mobile">
+          <span class="skill skill-m">Flutter</span>
+          <span class="skill skill-m">Dart</span>
+          <span class="skill skill-m">Swift</span>
+          <span class="skill skill-m">Kotlin</span>
+          <span class="skill skill-m">Firebase</span>
+          <span class="skill skill-m">React Native</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══ CONTACT ══════════════════════════════════ -->
+<section id="contact">
+<div class="wrapper">
+  <div class="contact-inner">
+    <p class="sec-eyebrow reveal" style="justify-content:center;">Get In Touch</p>
+    <h2 class="sec-title reveal d1">Let's Build<br>Something<span style="color:var(--cyan)">.</span></h2>
+    <p class="sec-sub reveal d2">Whether it's a freelance project, a job opportunity, or a collab — I'd love to hear from you.</p>
+    <div class="contact-email-wrap reveal d3">
+      <a class="contact-email">danmcley@gmail.com</a>
+    </div>
+    <div class="socials reveal d3">
+      <a class="social-btn" href="https://github.com/danmcley" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.55v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.27 5.68.42.36.79 1.07.79 2.16v3.2c0 .3.2.66.8.55C20.71 21.37 24 17.07 24 12 24 5.73 18.27.5 12 .5z"/></svg>
+        GitHub
+      </a>  
+      <a class="social-btn" href="https://www.facebook.com/danmcley.pangan" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════ -->
+<footer>
+  <span>&copy; 2025 <a href="#">Your Name</a>. All rights reserved.</span>
+  <span>Built with HTML · CSS · JS — Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a></span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
